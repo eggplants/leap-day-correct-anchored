@@ -18,12 +18,12 @@ $(function () {
       "<li class='tag-" +
         this.nodeName.toLowerCase() +
         "'><a href='#" +
-        encodeURIComponent($(this).text().toLowerCase()) +
+        encodeURIComponent($(this).text().toLowerCase().replace(/\s/g, "-")) +
         "'>" +
         $(this).text() +
         "</a></li>"
     );
-    $(this).attr("id", encodeURIComponent($(this).text().toLowerCase()));
+    $(this).attr("id", encodeURIComponent($(this).text().toLowerCase().replace(/\s/g, "-")));
     $("nav ul li:first-child a").parent().addClass("active");
   });
 
