@@ -1,3 +1,15 @@
+# jekyll-theme-leap-day, but fixed anchor-related bugs
+
+[Leap day](https://github.com/pages-themes/leap-day) has the feature to generate anchors from section titles and put them in the side bar.
+
+But it only works for section titles written in ASCII characters, anything else does not work correctly. (especially Japanese)
+
+So in this forked repo, I fixed the problem.
+
+If you want to use this, add `remote_theme: eggplants/leap-day-correct-anchored` to `_config.yml`.
+
+---
+
 # The Leap day theme
 
 [![.github/workflows/ci.yaml](https://github.com/pages-themes/leap-day/actions/workflows/ci.yaml/badge.svg)](https://github.com/pages-themes/leap-day/actions/workflows/ci.yaml) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-leap-day.svg)](https://badge.fury.io/rb/jekyll-theme-leap-day)
